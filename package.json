@@ -1,0 +1,28 @@
+{
+  "name": "melhorsaudeapi",
+  "version": "1.0.0",
+  "description": "Projeto padrão MEAN - MondoDB, Express, Angular e Nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/urnauzao/melhorsaude-mean.git"
+  },
+  "keywords": [
+    "MongoDB",
+    "Express",
+    "Angular",
+    "Nodejs",
+    "API",
+    "API",
+    "RESTful"
+  ],
+  "author": "Urnauzao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/urnauzao/melhorsaude-mean/issues"
+  },
+  "homepage": "https://github.com/urnauzao/melhorsaude-mean#readme"
+}
