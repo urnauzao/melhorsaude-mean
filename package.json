@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/urnauzao/melhorsaude-mean/issues"
   },
-  "homepage": "https://github.com/urnauzao/melhorsaude-mean#readme"
+  "homepage": "https://github.com/urnauzao/melhorsaude-mean#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
