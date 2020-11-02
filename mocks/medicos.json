@@ -1,0 +1,11 @@
+{
+    "clinica_id": 1,
+    "nome": "Zack Mounsey",
+    "idade": 64,
+    "especializacao": "Northstar RxLLC",
+    "preco_consulta": 105.56,
+    "telefone": "+353 (969) 563-5095",
+    "email": "zmounsey0@de.vu",
+    "whatsapp": 6069277643,
+    "foto": "http://dummyimage.com/250x250.jpg/dddddd/000000"
+}
