@@ -4,6 +4,7 @@
   "description": "Projeto padrão MEAN - MondoDB, Express, Angular e Nodejs",
   "main": "index.js",
   "scripts": {
+    "app": "echo \"Inicinado execução do App\" && node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -26,6 +27,7 @@
   },
   "homepage": "https://github.com/urnauzao/melhorsaude-mean#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "mongoose": "^5.10.9"
   }

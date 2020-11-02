@@ -1,0 +1,16 @@
+{
+    "nome" : "Clínica IMEDiato",
+    "url_imagem":  "https://centerminas.com/wp-content/uploads/2018/07/CTM_img_destacada_clinica_imediato.jpg", 
+    "url": "https://google.com.br", 
+    "whatsapp": 5511999107905, 
+    "descricao": "Clinica Especilizada em tratamento facial", 
+    "local_resumido": "Rua Borges Ladario 372, Tatuapé, São Paulo - SP - Brasil", 
+    "logradouro": "Rua Borges Ladario", 
+    "num_endereco": "372", 
+    "complemento": "Apt 22", 
+    "cep": "01020-400", 
+    "cidade": "São Paulo", 
+    "bairro": "Tatuapé", 
+    "estado": "SP", 
+    "pais": "Brasil" 
+}
