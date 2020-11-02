@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "668e1bc3-6d46-4e5f-8b38-d0406c00955b",
+		"name": "MelhorSaudeMEAN",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Medico",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"clinica_id\": 1,\r\n    \"nome\": \"Zack Mounsey\",\r\n    \"idade\": 64,\r\n    \"especializacao\": \"Northstar RxLLC\",\r\n    \"preco_consulta\": 105.56,\r\n    \"telefone\": \"+353 (969) 563-5095\",\r\n    \"email\": \"zmounsey0@de.vu\",\r\n    \"whatsapp\": 6069277643,\r\n    \"foto\": \"http://dummyimage.com/250x250.jpg/dddddd/000000\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/medico",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"medico"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/medicos",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"medicos"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
