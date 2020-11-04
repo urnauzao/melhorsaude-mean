@@ -44,6 +44,9 @@ const ClinicaSchema = new mongoose.Schema({
     },
     pais: {
         type: String
+    },
+    medicos: {
+        type: Array
     }
 });
 mongoose.model('clinicas', ClinicaSchema);

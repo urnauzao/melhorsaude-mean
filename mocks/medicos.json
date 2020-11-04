@@ -1,5 +1,5 @@
+[
 {
-    "clinica_id": 1,
     "nome": "Zack Mounsey",
     "idade": 64,
     "especializacao": "Northstar RxLLC",
@@ -8,4 +8,17 @@
     "email": "zmounsey0@de.vu",
     "whatsapp": 6069277643,
     "foto": "http://dummyimage.com/250x250.jpg/dddddd/000000"
+},
+{
+    "_id": "5f8f72b7272a1765309699e2",
+    "nome": "Dra. Ariane Cristina Miranda ",
+    "idade": 34,
+    "especializacao": "Odontologia Geral",
+    "preco_consulta": 200.00,
+    "telefone": "+55 (11) 4214-0061",
+    "email": "drari_1986@gmail.com",
+    "whatsapp": 5511985212039,
+    "foto": "https://s3-sa-east-1.amazonaws.com/doctoralia.com.br/doctor/ebd7b8/ebd7b883bc0738ba2f7881f9bd66e4dc_large.jpg",
+    "__v": 0
 }
+]

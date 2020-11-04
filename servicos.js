@@ -13,7 +13,7 @@ const ServicoSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    clinicas_id: {
+    clinicas: {
         type: Array,
     }
 });

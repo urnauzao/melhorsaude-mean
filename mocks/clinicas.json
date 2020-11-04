@@ -12,5 +12,6 @@
     "cidade": "São Paulo", 
     "bairro": "Tatuapé", 
     "estado": "SP", 
-    "pais": "Brasil" 
+    "pais": "Brasil",
+    "medicos" : []
 }

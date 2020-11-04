@@ -1,0 +1,298 @@
+{
+	"info": {
+		"_postman_id": "668e1bc3-6d46-4e5f-8b38-d0406c00955b",
+		"name": "MelhorSaudeMEAN",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Medico",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"clinica_id\": 1,\r\n    \"nome\": \"Zack Mounsey\",\r\n    \"idade\": 64,\r\n    \"especializacao\": \"Northstar RxLLC\",\r\n    \"preco_consulta\": 105.56,\r\n    \"telefone\": \"+353 (969) 563-5095\",\r\n    \"email\": \"zmounsey0@de.vu\",\r\n    \"whatsapp\": 6069277643,\r\n    \"foto\": \"http://dummyimage.com/250x250.jpg/dddddd/000000\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/medico",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"medico"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/medicos",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"medicos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateWithClinica",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Zack Mounsey\",\r\n    \"idade\": 64,\r\n    \"especializacao\": \"Northstar RxLLC\",\r\n    \"preco_consulta\": 105.56,\r\n    \"telefone\": \"+353 (969) 563-5095\",\r\n    \"email\": \"zmounsey0@de.vu\",\r\n    \"whatsapp\": 6069277643,\r\n    \"foto\": \"http://dummyimage.com/250x250.jpg/dddddd/000000\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/medico/clinica/5fa0ae262386dfb1946b5bfa",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"medico",
+								"clinica",
+								"5fa0ae262386dfb1946b5bfa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetOne",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/medico/5fa0aef62386dfb1946b5bff",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"medico",
+								"5fa0aef62386dfb1946b5bff"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\": \"5f8f72b7272a1765309699e2\",\r\n    \"nome\": \"Dra. Ariane Cristina Miranda \",\r\n    \"idade\": 34,\r\n    \"especializacao\": \"Odontologia Geral\",\r\n    \"preco_consulta\": 200.00,\r\n    \"telefone\": \"+55 (11) 4214-0061\",\r\n    \"email\": \"drari_1986@gmail.com\",\r\n    \"whatsapp\": 5511985212039,\r\n    \"foto\": \"https://s3-sa-east-1.amazonaws.com/doctoralia.com.br/doctor/ebd7b8/ebd7b883bc0738ba2f7881f9bd66e4dc_large.jpg\",\r\n    \"__v\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/medico/5f8f72b7272a1765309699e2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"medico",
+								"5f8f72b7272a1765309699e2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/medico/5fa0aef62386dfb1946b5bff",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"medico",
+								"5fa0aef62386dfb1946b5bff"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Servico",
+			"item": [
+				{
+					"name": "Servicos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/servicos",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"servicos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Criar Servico",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\" : \"Cirurgia Plástica\",\r\n    \"descricao\" : \"Embelezamento facial, correção estéticas, cirurgias de recomposição e armonização facial, implantes capilares, etc...\",\r\n    \"imagem\" : \"https://blogfisioterapia.com.br/wp-content/uploads/2018/03/cirurgia-pl%C3%A1stica-capa.png\",\r\n    \"clinicas\" : []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/servico",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"servico"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Clinica",
+			"item": [
+				{
+					"name": "Clinicas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/clinicas",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"clinicas"
+							]
+						},
+						"description": "        "
+					},
+					"response": []
+				},
+				{
+					"name": "Criar Clinica Com Servico",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\" : \"Clínica IMEDiato\",\r\n    \"url_imagem\":  \"https://centerminas.com/wp-content/uploads/2018/07/CTM_img_destacada_clinica_imediato.jpg\", \r\n    \"url\": \"https://google.com.br\", \r\n    \"whatsapp\": 5511999107905, \r\n    \"descricao\": \"Clinica Especilizada em tratamento facial\", \r\n    \"local_resumido\": \"Rua Borges Ladario 372, Tatuapé, São Paulo - SP - Brasil\", \r\n    \"logradouro\": \"Rua Borges Ladario\", \r\n    \"num_endereco\": \"372\", \r\n    \"complemento\": \"Apt 22\", \r\n    \"cep\": \"01020-400\", \r\n    \"cidade\": \"São Paulo\", \r\n    \"bairro\": \"Tatuapé\", \r\n    \"estado\": \"SP\", \r\n    \"pais\": \"Brasil\",\r\n    \"medicos\":[]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/clinica/servico/5fa0a086a6727b344cbe5783",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"clinica",
+								"servico",
+								"5fa0a086a6727b344cbe5783"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar Clinica",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/clinica/5fa0a3b20b6bb966bc123768",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"clinica",
+								"5fa0a3b20b6bb966bc123768"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "555f3e6d-1165-4b6d-8ca0-c28f0b193bee",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "457fdca1-0e4d-4f95-98b6-df8cd38c4e04",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "04dd2ec6-1582-4627-9dea-fac63b766b82",
+			"key": "url",
+			"value": "http://127.0.0.1:8000"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
